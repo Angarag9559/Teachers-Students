@@ -19,13 +19,13 @@ export default function TeachersPage() {
 
   return (
     <div className="mx-auto max-w-[1100px] p-5">
-      <div className="mb-8 flex gap-4 flex-row items-center justify-between">
-        <h1 className="text-4xl font-bold">Teachers</h1>
+      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <h1 className="text-3xl sm:text-4xl font-bold text-black">Teachers</h1>
         
-        <input type="text" placeholder="Search teachers..." className="rounded-lg border border-black p-2 outline-blue" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+        <input type="text" placeholder="Search teachers..." className="w-full sm:w-64 rounded-lg border border-black p-2 outline-none focus:ring-2 focus:ring-blue-500" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
       </div>
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {filteredTeachers.map((teacher, index) => (
           <div key={teacher.id} className="overflow-hidden rounded-[14px] border border-black bg-white">
             <div className="relative h-[200px] w-full bg-[#bbbbbb]">

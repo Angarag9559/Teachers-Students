@@ -19,13 +19,13 @@ export default function StudentsPage() {
 
   return (
     <div className="mx-auto max-w-[1100px] p-5">
-      <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <h1 className="text-4xl font-bold">Students</h1>
+      <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <h1 className="text-3xl sm:text-4xl font-bold text-black">Students</h1>
         
         <input
           type="text"
           placeholder="Search students..."
-          className="rounded-lg border border-black p-2 outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full sm:w-64 rounded-lg border border-black p-2 outline-none focus:ring-2 focus:ring-blue-500"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />

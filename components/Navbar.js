@@ -15,11 +15,11 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-black/10 bg-white/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1100px] items-center justify-between px-5">
-        <Link href="/" className="text-2xl font-black tracking-tighter text-black">
-          ACADEMY
+        <Link href="/" className="text-xl sm:text-2xl font-black tracking-tighter text-black">
+          Nest Education
         </Link>
         
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-4 sm:gap-6">
           {links.map((link) => {
             const isActive = pathname === link.href
             return (
