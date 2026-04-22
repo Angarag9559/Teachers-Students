@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="flex h-screen w-full overflow-hidden">
+    <main className="flex min-h-[calc(100vh-64px)] w-full overflow-hidden">
 
       <Link 
         href="/teachers" 
