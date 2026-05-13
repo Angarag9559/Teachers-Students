@@ -35,7 +35,7 @@ export default function StudentsPage() {
         {filteredStudents.map((student) => (
           <div 
             key={student.id} 
-            className="flex items-center justify-between rounded-xl border border-black bg-white p-5 shadow-sm"
+            className="flex flex-col gap-3 rounded-xl border border-black bg-white p-5 shadow-sm sm:flex-row sm:items-center sm:justify-between"
           >
             <div className="student-info">
               <h3 className="text-xl font-bold">{student.first_name} {student.last_name}</h3>
@@ -49,7 +49,7 @@ export default function StudentsPage() {
             </div>
             
             <button 
-              className="rounded-md bg-[#dc3545] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#c82333]" 
+              className="self-start rounded-md bg-[#dc3545] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#c82333] sm:self-auto" 
               onClick={() => deleteStudent(student.id)}
             >
               Remove
