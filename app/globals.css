@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* If you want to set global base styles in v4: */
 @layer base {
   body {
     background-color: white;
@@ -8,6 +7,5 @@
     min-height: 100vh;
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
 }

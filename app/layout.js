@@ -6,9 +6,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Nest Education',
-  description: 'A modern educational management system',
+  description: 'Nest Education - Teachers and Students',
 }
-
 
 export default function RootLayout({ children }) {
   return (
